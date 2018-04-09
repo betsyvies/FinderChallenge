@@ -2,7 +2,7 @@ function searchForm(data) {
     // console.log(data);
     const searchForm = document.getElementById('searchForm');
     const searchText = document.getElementById('searchText');
-    const submitButton = document.getElementById('submitButton')
+    const submitButton = document.getElementById('submitButton');
     const containerItems = document.getElementById('containerItems');
 
     var item = data.map(function(i) { return i.title });
@@ -60,5 +60,5 @@ function searchForm(data) {
         } else {
             submitButton.classList.add('disabled')
         }
-    })
+    });
 }

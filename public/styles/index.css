@@ -31,7 +31,7 @@
   display: inline-block;
 }
 .submit {
-  position: fixed;
+  position: absolute;
   margin-left: 0.5rem;
 }
 @media only screen and (max-width: 650px) {
