@@ -12,22 +12,24 @@
     <div class="app pure-g">
       <header class="pure-u-1">
         <div class="pure-u-1-3">
-          <h1 class="logo">Finder challenge!</h1>
+          <h1 class="logo">Finder challenge</h1>
         </div>
         <div class="pure-u-7-24">
           <div class="search-form">
-            <form action="">
-              <input type="text" placeholder="">
-              <input type="button" value="Search">
+            <form action="" id="searchForm">
+              <input type="text" id="searchText" placeholder="Write here">
+              <input type="submit" value="Search">
             </form>
           </div>
         </div>
         <div class="pure-u-1-3"></div>
       </header>
       <aside class="filters pure-u-1-4"></aside>
-      <content class="pure-u-3-4"></content>
+      <content class="pure-u-3-4" id="containerItems"></content>
       <footer class="pure-u-1"></footer>
     </div>
+    <script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/vendor/awesomplete-gh-pages/awesomplete.min.js"></script>
     <script src="/vendor/underscore/underscore-min.js"></script>
     <script src="/scripts/global.js"></script>
     <script src="/scripts/search-form.js"></script>

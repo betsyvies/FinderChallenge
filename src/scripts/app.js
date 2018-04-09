@@ -2,4 +2,9 @@
   main script for only runs every function
 */
 
-searchForm();
+window.addEventListener('load', function() {
+    loadJSON(JSON_FILE, function(response) {
+        var actual_JSON = JSON.parse(response);
+        searchForm(actual_JSON.data);
+    });
+})

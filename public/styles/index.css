@@ -8,6 +8,10 @@
 .search-form {
   margin-top: 30px;
 }
+.disabled {
+  pointer-events: none;
+  color: #808080;
+}
 @media only screen and (max-width: 650px) {
   .search-form {
     display: none;
