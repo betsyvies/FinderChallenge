@@ -11,6 +11,7 @@
 .disabled {
   pointer-events: none;
   color: #808080;
+  opacity: 0.4;
 }
 .visually-hidden {
   display: none;
@@ -29,7 +30,7 @@
 .awesomplete {
   display: inline-block;
 }
-#submit-button {
+.submit {
   position: fixed;
   margin-left: 0.5rem;
 }
