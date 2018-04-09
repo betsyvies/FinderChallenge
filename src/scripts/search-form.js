@@ -1,7 +1,8 @@
-function searchForm(data){
-    console.log(data);
+function searchForm(data) {
+    // console.log(data);
     const searchForm = document.getElementById('searchForm');
     const searchText = document.getElementById('searchText');
+    const submitButton = document.getElementById('submitButton')
     const containerItems = document.getElementById('containerItems');
 
     var item = data.map(function(i) { return i.title });
@@ -15,7 +16,7 @@ function searchForm(data){
         e.preventDefault();
         text = searchText.value;
 
-        submit.classList.toggle('disabled', text.length < 3)
+        submitButton.classList.toggle('disabled', text.length < 3)
         const awesompleteList = document.getElementById('awesomplete_list_1');
         const numChildNodes = awesompleteList.childNodes.length
         
@@ -24,7 +25,6 @@ function searchForm(data){
             text = awesompleteList.childNodes[i].textContent;
             newArr.push(text);
          }
-         console.log(newArr);
         
         containerItems.innerHTML = '';
         data.map(items => {
